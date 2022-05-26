@@ -1,5 +1,8 @@
 body{
     font-family: Roboto, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 ul{
@@ -10,31 +13,26 @@ ul{
 
 a{
     text-decoration: none;
-    color: #E5E7EB;
+    color: #e5e7eB;
+}
+
+a:hover{
+    color: #00ffff;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
     height: 100px;
-    background-color: #1F2937;
+    padding: 32px 0;
+    background-color: #1f2937;
 }
 
 .header-left{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 60px;
-}
-
-.header-right{
-    display: flex;
-    align-items: center;
-    gap: 32px;
-    margin-right: 60px;
-    font-weight: 600;
 }
 
 .logo{
@@ -42,6 +40,119 @@ a{
     height: 200px;
 }
 
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-weight: 600;
+    margin-top: -20px;
+    margin-right: 60px;
+}
+
+.section-1{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    padding: 16px;
+    gap: 32px;
+    background-color: #1f2937;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 16px;
+}
+
+.hero-title{
+    color: #f9faf8;
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.hero-subtitle{
+    font-size: 18px;
+    color: #e5e7eB;
+    margin-bottom: 8px;
+}
+
+.btn1{
+    background-color: #3882f6;
+    color: #f9faf8;
+    border: 1px solid #3882f6;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 24px;
+}
+
+.hero-right{
+    display: flex;
+    border: 2px solid #3882f6;
+}
+
+.hero-image{
+    width: 500px;
+    height: auto;
+}
+
 .footer{
     text-align: center;
+}
+
+.section-2{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 32px;
+}
+
+.title-gallery{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-top: 32px;
+}
+
+.gallery{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 16px;
+    width: 250px;
+    height: 300px;
+    /* flex: 1; */
+}
+
+.info-image{
+    flex: auto;
+    width: 250px;
+    height: auto;
+    border: 2px solid #3882f6;
+    border-radius: 10px;
+}
+
+.info-text{
+    text-align: center;
+    font-size: 1em;
+    color: #1f2937;
+}
+
+.footer{
+    padding: 32px;
+    margin-top: 32px;
+    background-color: #1f2937;
+    color: #e5e7eB;
 }
