@@ -1,8 +1,10 @@
 body{
     font-family: Roboto, Verdana, sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-flow: column;
     justify-content: space-between;
+    padding: 0;
+    margin: 0;
 }
 
 ul{
@@ -51,10 +53,10 @@ a:hover{
 
 .section-1{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     height: 400px;
-    padding: 16px;
-    gap: 32px;
+    padding-bottom: 3%;
+    gap: 5%;
     background-color: #1f2937;
     justify-content: center;
     align-items: center;
@@ -76,6 +78,7 @@ a:hover{
 .hero-subtitle{
     font-size: 18px;
     color: #e5e7eB;
+    margin-top: -12px;
     margin-bottom: 8px;
 }
 
@@ -83,10 +86,15 @@ a:hover{
     background-color: #3882f6;
     color: #f9faf8;
     border: 1px solid #3882f6;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 16px;
     padding: 8px 24px;
+}
+
+.btn1:hover, .cta-btn:hover{
+    color: #1f2937;
+    background-color: #00ffff;
 }
 
 .hero-right{
@@ -105,8 +113,9 @@ a:hover{
 
 .section-2{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
     align-items: center;
+    margin-top: 32px;
     gap: 32px;
 }
 
@@ -114,7 +123,6 @@ a:hover{
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
-    margin-top: 32px;
 }
 
 .gallery{
@@ -133,7 +141,6 @@ a:hover{
     gap: 16px;
     width: 250px;
     height: 300px;
-    /* flex: 1; */
 }
 
 .info-image{
@@ -144,13 +151,85 @@ a:hover{
     border-radius: 10px;
 }
 
+.item p{
+    padding: 0;
+    margin: 0;
+    color: #1f2937;
+    text-align: center;
+}
+
 .info-text{
     text-align: center;
-    font-size: 1em;
     color: #1f2937;
 }
 
-.footer{
+.section-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    margin-top: 32px;
+    height: 300px;
+    background-color: #e5e7eB;
+}
+
+.testimonial{
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    width: 900px;
+    gap: 16px;
+}
+
+.quote{
+    flex: 0 1 0;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 36px;
+    color: #1f2937;
+    text-align: left;
+}
+
+.quote-name{
+    font-weight: 600;
+    font-size: 24px;
+    align-self: flex-end;
+    color: #1f2937;
+}
+
+.section-4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    padding: 0px 64px;
+    margin-top: 32px;
+    gap: 128px;
+    background-color: #3882f6;
+    border-radius: 5px;
+    color: #f9faf8;
+}
+
+.cta-title{
+    font-weight: 600;
+}
+
+.cta-btn{
+    border: 3px solid #f9faf8;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 24px;
+}
+
+.footer{    
     padding: 32px;
     margin-top: 32px;
     background-color: #1f2937;
